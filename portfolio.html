@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favIco.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&amp;display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/fancybox/fancybox.css">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="img/logo4.png" alt="logo" width="300px">
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"> 
+                <a href="index.html" class="navbar-brand p-0">
+                    <img class="logo" src="img/logo3.png" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-flex navBtns">
+                        <div class="inline dropBox">
+                            <div class="dropdown">
+                                <a class="btn py-2 px-4 ms-4 lang dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-language fa-2x"></i>
+                                </a>
+        
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="index_ar.html"><img src="img/ksa.png" alt="Arabic">العربية</a></li>
+                                    <li><a class="dropdown-item" href="#"><img src="img/uk.png" alt="English">English</a></li>
+                                </ul>
+                            </div>
+                            <!-- <a href="#" class="btn searchBtn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-search"></i></a> -->
+                        </div>
+                    <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+                    </div>
+                </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Our Projects</h1>
+                    <a href="index.html" class="h5 text-white">Home</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="#" class="h5 text-white">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="heading-text">
+                <h4>Enter Your Phone Number</h4>
+                <p class="text-black-50">Enter your mobile number to log in or create a new account. Make sure to link the number to the WhatsApp application to receive the verification code.</p>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-4">
+                        <select class="form-select" id="single-select-field" data-placeholder="Choose your Country" required="">
+                            <option></option>
+                            <option>Egypt</option>
+                            <option>KSA</option>
+                            <option>UAE</option>
+                            <option>Qatar</option>
+                            <option>India</option>
+                        </select>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" class="form-control" placeholder="XXXXXXXXXXXX" required="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary py-2 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal2">Log In</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Verification Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="heading-text">
+                <h4>Validation Code</h4>
+                <p class="text-black-50">Enter the code sent to your mobile phone</p>
+            </div>
+            <form action="">
+                <div class="row justify-content-center verification">
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-primary py-2 w-100">Log In</button>
+            <p class="mt-2">You can resend the code after 00:00</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Search Modal -->
+     <!-- <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row justify-content-center">
+                        <div class="col searchModal">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- End Modals -->
+
+
+    <!-- Themes Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Professional Thmes</h5>
+                <h1 class="mb-0">Creative Themes for Your Successful Business</h1>
+            </div>
+            <section id="portfolio" class="project-masonry-area pt-115">
+                <div class="container">
+                    <!-- <div class="row align-items-end">
+                        <div class="col-lg-4">
+                            <div class=" pb-20  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                                <h6 class="sub-title">Portfolio</h6>
+                                <h4 class="title">Themes <span>Gallery.</span></h4>
+                            </div> 
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="project-menu text-center text-sm-left text-lg-right pb-20">
+                                <ul>
+                                    <li class="active" data-filter="*">See All</li>
+                                    <li data-filter=".apps">Apps</li>
+                                    <li data-filter=".branding">Branding</li>
+                                    <li data-filter=".creative">Creative</li>
+                                    <li data-filter=".laptop">Foundations</li>
+                                    <li data-filter=".product">Product</li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div> -->
+                    <div class="row grid">
+                        <div class="col-lg-4 col-sm-6 grid-item apps creative laptop">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/kater.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a href="img/portfolio/KhaterFoundation.png" data-fancybox="gallery" class="image-popup">
+                                        <span>Khater</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="http://khaterfoundation.com/en">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/ezhalha.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Home.png">
+                                        <span>Ezhalha</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="https://ezhalha.com.sa/">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item apps branding product">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/minible.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/minbible-com.png">
+                                        <span>Minbible</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="http://www.minbible.com/">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item laptop product">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/pay.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/PayShip.png">
+                                        <span>PayShip</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="https://payship.biz/">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/gold.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup"
+                                        href="img/portfolio/أفضل-منصة-ذهب-ومجوهرات-اون-لاين-في-السعودية-جولد-بوليفارد.png">
+                                        <span>Jewellery</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="https://goldblv.com/">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/vien.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/مختبرات-فين.png">
+                                        <span>Vien Labs</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="https://veinlab.net/">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/mayasem.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/مياسم-العقار.png">
+                                        <span>Mayasem</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="http://mayasem.online/">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/مؤسسة-المناسب.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/monasib.png">
+                                        <span>Almonasib</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="https://almonasib.org/home">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                            <div class="single-gallery gallery-masonry mt-30">
+                                <div class="gallery-image">
+                                    <img src="img/portfolio/portafoto.png" alt="protfolio">
+                                </div>
+                                <div class="gallery-icon">
+                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Home-Portafoto.png">
+                                        <span>Portafoto</span>
+                                    </a>
+                                    <a class="demo" target="_blank" href="http://portafoto.net/ar">
+                                        <i class="bi bi-eye-fill"></i>
+                                    </a>
+                                </div>
+                            </div> <!-- single gallery -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/3lmni.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/3lmni-school-Home.png">
+                                <span>3Lmni</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://3lmniacademy.com/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/FUSION.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/fusionfull.png">
+                                <span>Fusion AI</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://fusionai-co.com/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/goldsgym.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Gold-s-Gym-Egypt.png">
+                                <span>Gold's Gym</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://karimosama99.github.io/GoldsGym/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                    </div> <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="gallery-btn mt-4 mb-5 text-center">
+                                <a class="btn btn-primary py-3 px-4 d-inline-flex gap-3" href="./register/register.html">Create Your Store ! <i class="bi bi-shop"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </section>
+        </div>
+    </div>
+    <!-- Themes End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">Client Name</h4>
+                            <small class="text-uppercase">Profession</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light text-dark mt-5 wow fadeInUp footer" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-4">
+                        <a href="index.html">
+                            <img class="flogo" src="img/logo5.png" alt="logo">
+                        </a>
+                        <p class="mt-3 mb-4">Golden Coode The best team specialized in designing and programming websites, blogs and online stores</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Say Hello !">
+                                <button class="btn btn-primary-inverse">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-dark mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">Hadayek-Helwan, Cairo, Egypt</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+011 247 62799</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-dark mb-0">Company</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-dark" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-dark mb-0">Services</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Creative Design</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Development</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Digital Marketing</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hosting</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Others</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-dark bg-light">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 70px;">
+                        <p class="mb-0">© <a class="text-primary border-bottom" href="https://goldencoode.com">Golden Coode</a>. All Rights Reserved. 
+						
+						
+						Designed by <a class="text-dark border-bottom" href="https://karim-osama.netlify.app" target="_blank">Karim Osama</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary-inverse btn-lg-square rounded back-to-top" style="display: none;"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- WhatsApp -->
+    <a href="#" class="whatsapp" style="bottom: 50px;"><i class="fab fa-whatsapp fa-2x"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/fancybox/fancybox.umd.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

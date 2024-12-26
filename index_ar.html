@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title>Startup - Startup Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favIco.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&amp;display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fancybox/fancybox.css">
+    
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_ar.css">
+</head>
+    <body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="img/logo4.png" alt="logo" width="300px">
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid sticky-top">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"> 
+                <a href="index.html" class="navbar-brand p-0">
+                    <img class="logo" src="img/logo3.png" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">الرشيسية</a>
+                        <a href="about.html" class="nav-item nav-link">عنا</a>
+                        <a href="services.html" class="nav-item nav-link">الخدمات</a>
+                        <a href="portfolio.html" class="nav-item nav-link">أعمالنا</a>
+                        <a href="blog.html" class="nav-item nav-link">المدونة</a>
+                        <a href="contact.html" class="nav-item nav-link">التواصل</a>
+                    </div>
+                    <div class="d-flex navBtns">
+                        <div class="inline dropBox">
+                            <div class="dropdown">
+                                <a class="btn py-2 px-4 ms-4 lang dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-language fa-2x"></i>
+                                </a>
+        
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><img src="img/ksa.png" alt="Arabic">العربية</a></li>
+                                    <li><a class="dropdown-item" href="index.html"><img src="img/uk.png" alt="English">English</a></li>
+                                </ul>
+                            </div>
+                            <!-- <a href="#" class="btn searchBtn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-search"></i></a> -->
+                        </div>
+                    <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center justify-content-center w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">التسجيل</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="heading-text">
+                <h4>أدخل رقم هاتفك</h4>
+                <p class="text-black-50">أدخل رقم هاتفك المحمول لتسجيل الدخول أو إنشاء حساب جديد، وتأكد من ربط الرقم بتطبيق واتساب لتلقي رمز التحقق.</p>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-4">
+                        <select class="form-select" id="single-select-field" data-placeholder="Choose your Country" required="">
+                            <option></option>
+                            <option>مصر</option>
+                            <option>السعودية</option>
+                            <option>الامارات</option>
+                            <option>قطر</option>
+                            <option>الهند</option>
+                        </select>
+                    </div>
+                    <div class="col-8">
+                        <input type="number" class="form-control" placeholder="XXXXXXXXXXXX" required="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary py-2 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal2">تسجل الدخول</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Verification Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="heading-text">
+                <h4>كود التحقق</h4>
+                <p class="text-black-50">أدخل الرمز المرسل إلى هاتفك المحمول</p>
+            </div>
+            <form action="">
+                <div class="row justify-content-center verification">
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-primary py-2 w-100">تسجيل الدخول</button>
+            <p class="mt-2">يمكنك إعادة إرسال الكود بعد الساعة 00:00</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Search Modal -->
+     <!-- <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row justify-content-center">
+                        <div class="col searchModal">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- End Modals -->
+
+    <div class="container-fluid position-relative p-0"> 
+        <div class="carousel slide carousel-fade pointer-event">
+            <div>
+                <img class="w-100 h-100" src="img/carousel-1.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase mb-3 animated slideInDown">أنشئ موقع الويب الخاص بك مجانًا الآن!</h5>
+                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">نحن نبني تطبيقات يحبها المستخدمون</h1>
+                        <a href="./contact.html" class="btn btn-primary mainBtn py-md-3 px-md-5 animated slideInLeft">تواصل معنا</a>
+                        <!-- <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">عملاء سعداء</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-primary mb-0">المشاريع المنجزة</h5>
+                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">الفوز بالجوائز</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts Start -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">لماذا تختارنا؟</h5>
+                <h1 class="mb-0">نحن هنا لتنمية أعمالك بشكل كبير</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cubes text-white"></i>
+                            </div>
+                            <h4>الأفضل في الصناعة</h4>
+                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-award text-white"></i>
+                            </div>
+                            <h4>حائز على جائزة</h4>
+                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px; visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/feature.jpg" style="object-fit: cover; visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-users-cog text-white"></i>
+                            </div>
+                            <h4>طاقم عمل محترف</h4>
+                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: zoomIn;">
+                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-phone-alt text-white"></i>
+                            </div>
+                            <h4>24/7 دعم</h4>
+                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Start -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">خدماتنا</h5>
+                <h1 class="mb-0">حلول تطوير مخصصة لنجاح أعمالك</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Cyber Security</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-pie text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Data Analytics</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-code text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Web Development</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="wow zoomIn mx-auto text-center" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
+                    <a href="service.html" class="btn btn-primary py-2 px-4">شاهد كافة الخدمات</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Quote Start -->
+    <div id="quote" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title toRight position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">طلب عرض أسعار</h5>
+                        <h1 class="mb-0">هل تحتاج إلى عرض أسعار مجاني؟ لا تتردد في الاتصال بنا</h1>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>الرد خلال 24 ساعة</h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>دعم هاتفي على مدار 24 ساعة</h5>
+                        </div>
+                    </div>
+                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">اتصل لطرح أي سؤال</h5>
+                            <h4 class="text-primary mb-0">+011 247 62799</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="border rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="اسمك" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="البريد الالكتروني" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option selected="">اختر الخدمة</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary-inverse w-100 py-3" type="submit">طلب عرض أسعار</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- PROJECT GALLERY PART START -->
+
+    <section id="portfolio" class="project-masonry-area pt-115">
+        <div class="container">
+            <div class="row justify-content-center">
+               <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">المشاريع</h5>
+                <h1 class="mb-0">الواجهات المخصصة التي قمنا بتصميمها من قبل</h1>
+                </div>
+            </div>
+            <!-- <div class="row align-items-end">
+                <div class="col-lg-4">
+                    <div class="pb-20  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <h6 class="sub-title">Portfolio</h6>
+                        <h4 class="title">Themes <span>Gallery.</span></h4>
+                    </div> 
+                </div>
+                <div class="col-lg-8">
+                    <div class="project-menu text-center text-sm-left text-lg-right pb-20">
+                        <ul>
+                            <li class="active" data-filter="*">See All</li>
+                            <li data-filter=".apps">Apps</li>
+                            <li data-filter=".branding">Branding</li>
+                            <li data-filter=".creative">Creative</li>
+                            <li data-filter=".laptop">Foundations</li>
+                            <li data-filter=".product">Product</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div> -->
+            <div class="row grid">
+                <div class="col-lg-4 col-sm-6 grid-item apps creative laptop">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/kater.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a href="img/portfolio/KhaterFoundation.png" data-fancybox="gallery" class="image-popup">
+                                <span>Khater</span>
+                            </a>
+                            <a class="demo" target="_blank" href="http://khaterfoundation.com/en">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/ezhalha.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Home.png">
+                                <span>Ezhalha</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://ezhalha.com.sa/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps branding product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/minible.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/minbible-com.png">
+                                <span>Minbible</span>
+                            </a>
+                            <a class="demo" target="_blank" href="http://www.minbible.com/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/pay.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/PayShip.png">
+                                <span>PayShip</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://payship.biz/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/gold.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup"
+                                href="img/portfolio/أفضل-منصة-ذهب-ومجوهرات-اون-لاين-في-السعودية-جولد-بوليفارد.png">
+                                <span>Jewellery</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://goldblv.com/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/vien.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/مختبرات-فين.png">
+                                <span>Vien Labs</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://veinlab.net/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/mayasem.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/مياسم-العقار.png">
+                                <span>Mayasem</span>
+                            </a>
+                            <a class="demo" target="_blank" href="http://mayasem.online/">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/مؤسسة-المناسب.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/monasib.png">
+                                <span>Almonasib</span>
+                            </a>
+                            <a class="demo" target="_blank" href="https://almonasib.org/home">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                    <div class="single-gallery gallery-masonry mt-30">
+                        <div class="gallery-image">
+                            <img src="img/portfolio/portafoto.png" alt="protfolio">
+                        </div>
+                        <div class="gallery-icon">
+                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Home-Portafoto.png">
+                                <span>Portafoto</span>
+                            </a>
+                            <a class="demo" target="_blank" href="http://portafoto.net/ar">
+                                <i class="bi bi-eye-fill"></i>
+                            </a>
+                        </div>
+                    </div> <!-- single gallery -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-btn mt-4 mb-5 text-center">
+                        <a class="btn btn-primary py-3 px-4 d-inline-flex gap-3" href="./portfolio.html">عرض المزيد<i class="bi bi-shop"></i></a>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!-- PROJECT GALLERY PART ENDS -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">الأراء</h5>
+                <h1 class="mb-0">ما يقوله عملاؤنا عن خدماتنا الرقمية</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">اسم العميل</h4>
+                            <small class="text-uppercase">رأيه</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">اسم العميل</h4>
+                            <small class="text-uppercase">رأيه</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">اسم العميل</h4>
+                            <small class="text-uppercase">رأيه</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
+                        <div class="ps-4">
+                            <h4 class="text-primary mb-1">اسم العميل</h4>
+                            <small class="text-uppercase">رأيه</small>
+                        </div>
+                    </div>
+                    <div class="pt-4 pb-5 px-5">
+                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">أحدث المدونات</h5>
+                <h1 class="mb-0">اقرأ أحدث المقالات من مدونتنا</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: slideInUp;">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="details.html">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: slideInUp;">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="details.html">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: slideInUp;">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-3.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"></i>John Doe</small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
+                            </div>
+                            <h4 class="mb-3">How to build a website</h4>
+                            <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                            <a class="text-uppercase" href="details.html">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Start -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light text-dark mt-5 wow fadeInUp footer" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-4">
+                        <a href="index.html">
+                            <img class="flogo" src="img/logo5.png" alt="logo">
+                        </a>
+                        <p class="mt-3 mb-4">جولدن كود أفضل فريق متخصص في تصميم وبرمجة المواقع والمدونات والمتاجر الإلكترونية</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Say Hello !">
+                                <button class="btn btn-primary-inverse">أرسل</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-dark mb-0">تواصل معنا</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">Hadayek-Helwan, Cairo, Egypt</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+011 247 62799</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="https://freewebsitecode.com"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-dark mb-0">الشركة</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>الرئيسية</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>من نحن</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>أعضاء الفريق</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>أحدث المدونات</a>
+                                <a class="text-dark" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>تواصل معنا</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-dark mb-0">الخدمات</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>التصميم الإبداعي</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>التطوير</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>التسويق الرقمي</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>الاستضافة</a>
+                                <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>أخري</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-dark bg-light">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 70px;">
+                        <p class="mb-0">© <a class="text-primary border-bottom" href="https://goldencoode.com">Golden Coode</a>. جميع الحقوق محفوظة. 
+						
+						
+						أنشئ بواسطة <a class="text-dark border-bottom" href="https://karim-osama.netlify.app" target="_blank">كريم أسامة</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary-inverse btn-lg-square rounded back-to-top" style="display: none;"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- WhatsApp -->
+    <a href="#" class="whatsapp" style="bottom: 50px;"><i class="fab fa-whatsapp fa-2x"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/fancybox/fancybox.umd.js"></script>
+    <script src="lib/select2/select2.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

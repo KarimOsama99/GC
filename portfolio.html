@@ -41,8 +41,9 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"> 
+     <div class="container-fluid sticky-top">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"> 
                 <a href="index.html" class="navbar-brand p-0">
                     <img class="logo" src="img/logo3.png" alt="logo">
                 </a>
@@ -72,11 +73,13 @@
                             </div>
                             <!-- <a href="#" class="btn searchBtn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-search"></i></a> -->
                         </div>
-                    <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+                    <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center justify-content-center w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
                     </div>
                 </div>
         </nav>
-
+        </div>
+     </div>
+    <div class="container-fluid position-relative p-0">
         <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
@@ -201,208 +204,151 @@
             </div>
             <section id="portfolio" class="project-masonry-area pt-115">
                 <div class="container">
-                    <!-- <div class="row align-items-end">
-                        <div class="col-lg-4">
-                            <div class=" pb-20  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                                <h6 class="sub-title">Portfolio</h6>
-                                <h4 class="title">Themes <span>Gallery.</span></h4>
-                            </div> 
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="project-menu text-center text-sm-left text-lg-right pb-20">
-                                <ul>
-                                    <li class="active" data-filter="*">See All</li>
-                                    <li data-filter=".apps">Apps</li>
-                                    <li data-filter=".branding">Branding</li>
-                                    <li data-filter=".creative">Creative</li>
-                                    <li data-filter=".laptop">Foundations</li>
-                                    <li data-filter=".product">Product</li>
-                                </ul>
-                            </div> 
-                        </div>
-                    </div> -->
                     <div class="row grid">
-                        <div class="col-lg-4 col-sm-6 grid-item apps creative laptop">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/kater.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/kater.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://khaterfoundation.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/KhaterFoundation.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Khater Foundation</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a href="img/portfolio/KhaterFoundation.png" data-fancybox="gallery" class="image-popup">
-                                        <span>Khater</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="http://khaterfoundation.com/en">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item branding creative">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/ezhalha.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/ezhalha.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://ezhalha.com.sa/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/Home.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Ezhalha</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Home.png">
-                                        <span>Ezhalha</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="https://ezhalha.com.sa/">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item apps branding product">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/minible.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/minible.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="http://www.minbible.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/minbible-com.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Minbible</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/minbible-com.png">
-                                        <span>Minbible</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="http://www.minbible.com/">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item laptop product">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/pay.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/pay.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://payship.biz/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/PayShip.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">PayShip</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/PayShip.png">
-                                        <span>PayShip</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="https://payship.biz/">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/gold.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://globaly.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/أفضل-منصة-ذهب-ومجوهرات-اون-لاين-في-السعودية-جولد-بوليفارد.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Jewellery</a>
+                                    </div>
                                 </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item branding creative">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/gold.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/vien.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://veinlab.net" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/مختبرات-فين.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Vien Labs</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup"
-                                        href="img/portfolio/أفضل-منصة-ذهب-ومجوهرات-اون-لاين-في-السعودية-جولد-بوليفارد.png">
-                                        <span>Jewellery</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="https://goldblv.com/">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/mayasem.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://mayasem.online" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/مياسم-العقار.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Mayasem</a>
+                                    </div>
                                 </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/vien.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/مؤسسة-المناسب.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://payship.biz/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/monasib.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Almonasib</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/مختبرات-فين.png">
-                                        <span>Vien Labs</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="https://veinlab.net/">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/portafoto.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://portafoto.net/ar" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/Home-Portafoto.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Portafoto</a>
+                                    </div>
                                 </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/mayasem.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/3lmni.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://3mniacademy.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/3lmni-school-Home.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">3Lmni</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/مياسم-العقار.png">
-                                        <span>Mayasem</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="http://mayasem.online/">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/FUSION.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://fusionai-co.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/fusionfull.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Fusion AI</a>
+                                    </div>
                                 </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/مؤسسة-المناسب.png" alt="protfolio">
+                        <div class="col-lg-4 col-md-6 grid-item">
+                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
+                                <div class="team-img gallery-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/portfolio/goldsgym.png" alt="">
+                                    <div class="team-social two">
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://karimosama99.github.io/GoldsGym/" target="_blank"><i class="bi bi-eye-fill"></i></a>
+                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/Gold-s-Gym-Egypt.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
+                                        <a class="btn text-white" href="#">Gold's Gym</a>
+                                    </div>
                                 </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/monasib.png">
-                                        <span>Almonasib</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="https://almonasib.org/home">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div> <!-- single gallery -->
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
-                            <div class="single-gallery gallery-masonry mt-30">
-                                <div class="gallery-image">
-                                    <img src="img/portfolio/portafoto.png" alt="protfolio">
-                                </div>
-                                <div class="gallery-icon">
-                                    <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Home-Portafoto.png">
-                                        <span>Portafoto</span>
-                                    </a>
-                                    <a class="demo" target="_blank" href="http://portafoto.net/ar">
-                                        <i class="bi bi-eye-fill"></i>
-                                    </a>
-                                </div>
-                            </div> <!-- single gallery -->
-                        </div>
-                        <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
-                    <div class="single-gallery gallery-masonry mt-30">
-                        <div class="gallery-image">
-                            <img src="img/portfolio/3lmni.png" alt="protfolio">
-                        </div>
-                        <div class="gallery-icon">
-                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/3lmni-school-Home.png">
-                                <span>3Lmni</span>
-                            </a>
-                            <a class="demo" target="_blank" href="https://3lmniacademy.com/">
-                                <i class="bi bi-eye-fill"></i>
-                            </a>
-                        </div>
-                    </div> <!-- single gallery -->
-                </div>
-                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
-                    <div class="single-gallery gallery-masonry mt-30">
-                        <div class="gallery-image">
-                            <img src="img/portfolio/FUSION.png" alt="protfolio">
-                        </div>
-                        <div class="gallery-icon">
-                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/fusionfull.png">
-                                <span>Fusion AI</span>
-                            </a>
-                            <a class="demo" target="_blank" href="https://fusionai-co.com/">
-                                <i class="bi bi-eye-fill"></i>
-                            </a>
-                        </div>
-                    </div> <!-- single gallery -->
-                </div>
-                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
-                    <div class="single-gallery gallery-masonry mt-30">
-                        <div class="gallery-image">
-                            <img src="img/portfolio/goldsgym.png" alt="protfolio">
-                        </div>
-                        <div class="gallery-icon">
-                            <a data-fancybox="gallery" class="image-popup" href="img/portfolio/Gold-s-Gym-Egypt.png">
-                                <span>Gold's Gym</span>
-                            </a>
-                            <a class="demo" target="_blank" href="https://karimosama99.github.io/GoldsGym/">
-                                <i class="bi bi-eye-fill"></i>
-                            </a>
-                        </div>
-                    </div> <!-- single gallery -->
-                </div>
                     </div> <!-- row -->
                     <div class="row">
                         <div class="col-lg-12">

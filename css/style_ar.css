@@ -41,6 +41,26 @@ html {
   display: inline-block;
 }
 
+.dropBox .dropdown-menu li:hover a {
+    padding-right: 1.25rem;
+    transition: all .3s ease-in-out;
+    /* color: var(--primary);
+    font-weight: 500; */
+}
+
+@media (max-width: 991px) {
+  .dropdown-menu[data-bs-popper] {
+    left: -15px !important;
+  }
+  .ms-4.lang {
+  margin-right: unset !important;
+  margin-left: 1.5rem !important;
+  }
+  .px-4.lang {
+    padding-right: unset !important;
+  }
+}
+
 .testimonial-item .d-flex {
   flex-direction: row-reverse;
 }

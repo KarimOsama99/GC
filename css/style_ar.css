@@ -103,3 +103,25 @@ html {
     right: 0;
   }
 }
+
+.timeline-content {
+  text-align: right;
+}
+/* Time Line responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: unset;
+	}
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
+    padding-left: 0;
+    padding-right: 30px;
+  }
+	.timeline-item:nth-child(odd){
+		padding-left: 0;
+		text-align: right;
+	}
+	.timeline-dot{
+		right: -7px;
+	}
+}

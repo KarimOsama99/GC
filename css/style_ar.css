@@ -132,3 +132,8 @@ html {
 		right: -7px;
 	}
 }
+
+.catLinks a:hover {
+  padding-left: unset !important;
+  padding-right: 25px !important;
+}

@@ -1,16 +1,6 @@
 (function ($) {
   ("use strict");
 
-  // Spinner
-  // var spinner = function () {
-  //   setTimeout(function () {
-  //     if ($("#spinner").length > 0) {
-  //       $("#spinner").removeClass("show");
-  //     }
-  //   }, 1);
-  // };
-  // spinner();
-
   $(window).on("load", function (event) {
     $("#preloader").delay(500).fadeOut(500);
   });
@@ -77,28 +67,28 @@
 
   //===== Isotope Project 1
 
-  $(".container").imagesLoaded(function () {
-    var $grid = $(".grid").isotope({
+  // $(".container").imagesLoaded(function () {
+  //   var $grid = $(".grid").isotope({
       // options
-      transitionDuration: "1s",
-      itemSelector: ".grid-item",
-      percentPosition: true,
-      masonry: {},
-    });
+    //   transitionDuration: "1s",
+    //   itemSelector: ".grid-item",
+    //   percentPosition: true,
+    //   masonry: {},
+    // });
 
     // filter items on button click
-    $(".project-menu ul").on("click", "li", function () {
-      var filterValue = $(this).attr("data-filter");
-      $grid.isotope({ filter: filterValue });
-    });
+    // $(".project-menu ul").on("click", "li", function () {
+    //   var filterValue = $(this).attr("data-filter");
+    //   $grid.isotope({ filter: filterValue });
+    // });
 
     //for menu active class
-    $(".project-menu ul li").on("click", function (event) {
-      $(this).siblings(".active").removeClass("active");
-      $(this).addClass("active");
-      event.preventDefault();
-    });
-  });
+  //   $(".project-menu ul li").on("click", function (event) {
+  //     $(this).siblings(".active").removeClass("active");
+  //     $(this).addClass("active");
+  //     event.preventDefault();
+  //   });
+  // });
 
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
@@ -149,6 +139,10 @@
 
   $(".navbar-toggler").click( () => { 
     $(".navbar-toggler span").toggleClass("fa-times");
+  });
+
+  $(".team-social.two a:last-child").click(function (e) {
+    e.preventDefault();
   });
 
 })(jQuery);

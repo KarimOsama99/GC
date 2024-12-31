@@ -48,6 +48,10 @@ html {
     font-weight: 500; */
 }
 
+.form-select {
+  background-position: left .75rem center !important;
+}
+
 .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;

@@ -78,7 +78,7 @@
         </div>
     </div>
 
-    <!-- Login Modal -->
+    <!-- Register Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
@@ -88,95 +88,37 @@
         </div>
         <div class="modal-body">
             <div class="heading-text">
-                <h4>أدخل رقم هاتفك</h4>
-                <p class="text-black-50">أدخل رقم هاتفك المحمول لتسجيل الدخول أو إنشاء حساب جديد، وتأكد من ربط الرقم بتطبيق واتساب لتلقي رمز التحقق.</p>
+                <h4>طل عرض أسعار مجاني</h4>
+                <p class="text-black-50">اختر الخدمة وأدخل رقم هاتفك المحمول لطلب عرض أسعار مجاني ومعرفة خططنا.</p>
             </div>
             <form action="">
                 <div class="row">
-                    <div class="col-4">
-                        <select class="form-select" id="single-select-field" data-placeholder="Choose your Country" required="">
-                            <option></option>
-                            <option>مصر</option>
-                            <option>السعودية</option>
-                            <option>الامارات</option>
-                            <option>قطر</option>
-                            <option>الهند</option>
+                    <div class="mb-3">
+                        <select class="form-select mb-3">
+                            <option selected="">أختر خدمة</option>
+                            <option value="1">Service 1</option>
+                            <option value="2">Service 2</option>
+                            <option value="3">Service 3</option>
                         </select>
+                        <textarea class="form-control" rows="2" placeholder="Service Details"></textarea>
                     </div>
-                    <div class="col-8">
-                        <input type="number" class="form-control" placeholder="XXXXXXXXXXXX" required="">
+                    <div class="mb-3">
+                        <label class="form-label" for="storeLink">رابط موقعك</label>
+                        <input type="text" placeholder="www.goldencoode.com/yourstore.com" class="form-control" id="storeLink">
                     </div>
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary py-2 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal2">تسجل الدخول</button>
-        </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Verification Modal -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-        <div class="modal-header">
-            <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="heading-text">
-                <h4>كود التحقق</h4>
-                <p class="text-black-50">أدخل الرمز المرسل إلى هاتفك المحمول</p>
-            </div>
-            <form action="">
-                <div class="row justify-content-center verification">
-                    <div class="col-2">
-                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
-                    </div>
-                    <div class="col-2">
-                        <input type="number" min="0" max="9" maxlength="1" class="form-control text-center" />
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">رقم الهاتف</label>
+                        <input type="number" id="phone" class="form-control" placeholder="XXXXXXXXXXXXXX">
                     </div>
                 </div>
             </form>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-primary py-2 w-100">تسجيل الدخول</button>
-            <p class="mt-2">يمكنك إعادة إرسال الكود بعد الساعة 00:00</p>
+            <button type="submit" class="btn btn-primary py-2 w-100">التسجيل</button>
         </div>
         </div>
     </div>
     </div>
-
-    <!-- Search Modal -->
-     <!-- <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title d-flex fs-5 text-center" id="exampleModalLabel"><img src="img/logo5.png" alt="logo"></div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form action="">
-                    <div class="row justify-content-center">
-                        <div class="col searchModal">
-                            <input type="text" class="form-control" placeholder="Search...">
-                            <i class="bi bi-search"></i>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- End Modals -->
 
     <div class="container-fluid position-relative p-0"> 
         <div class="carousel slide carousel-fade pointer-event">
@@ -812,7 +754,6 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/isotope/imagesloaded.pkgd.min.js"></script>
     <script src="lib/fancybox/fancybox.umd.js"></script>
-    <script src="lib/select2/select2.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

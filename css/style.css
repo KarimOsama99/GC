@@ -586,7 +586,7 @@ h6,
   padding-left: 25px !important;
 }
 
-.blogBox .row {
+/* .blogBox .row {
   position: relative;
   height: 650px;
 }
@@ -604,9 +604,15 @@ h6,
 .blogBox .row .col-lg-8::-webkit-scrollbar-track {
   background-color: var(--light);
   border-radius: 3px;
+} */
+.blogBox .sticky-top {
+  top: 100px;
+  z-index: 999;
 }
-.blogBox .row .col-lg-4 {
-  position: sticky;
+@media (max-width: 767px) {
+  .blogBox > .row {
+    flex-direction: column-reverse;
+  }
 }
 
 /*** Team ***/
@@ -693,6 +699,7 @@ h6,
 .team-item .team-img img,
 .blog-item .blog-img img {
   transition: 0.5s;
+  width: 100% !important;
 }
 
 .team-item:hover .team-img img,
@@ -1019,7 +1026,7 @@ input::-webkit-inner-spin-button {
 .timeline-content p{
     color: var(--dark);
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 22px;
 }
 

@@ -1215,6 +1215,9 @@ a {
 
 /* Modals */
 
+.modal {
+  z-index: 99999;
+}
 .modal-footer,
 .modal-body,
 .modal-header {

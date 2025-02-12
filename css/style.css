@@ -506,6 +506,10 @@ h6,
   transition: color .25s linear;
 }
 
+.dark-theme .text-black-50 {
+  color: rgba(255,255,255,.5) !important;
+}
+
 /*** Button ***/
 .btn {
   font-family: "Cairo", sans-serif;
@@ -1135,15 +1139,18 @@ h6,
 .form-select {
   cursor: pointer;
 }
+.form-control.bg-light {
+  border: 1px solid #ffd99f !important;
+}
 /* .form-select,
 .form-control {
   border: 1px solid var(--light) !important;
 } */
 .dark-theme .form-select,
-.dark-theme .form-control {
+.dark-theme .form-control:not(.dark-theme .footer .form-control) {
   color: #fff;
-  background-color: var(--body-color) !important;
-  border: 1px solid var(--light) !important;
+  background-color: var(--light) !important;
+  border: 1px solid hsl(0, 0%, 33%) !important;
 }
 .dark-theme .form-control:focus,
 .dark-theme .form-select:focus {
@@ -1669,6 +1676,9 @@ a {
 }
 .modal-title img {
     height: 66px;
+}
+.dark-theme .modal-title img {
+  filter: invert(1);
 }
 
 .heading-text {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Startup - Startup Website Template</title>
+    <title>Golden Code | Advanced Software Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&amp;display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
+    <link href="lib/fontawesome/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -52,7 +53,8 @@
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid sticky-top">
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"> 
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 position-relative"> 
+                <!-- <img class="shape" src="img/shape1.avif" alt="shape"> -->
                 <a href="index.html" class="navbar-brand p-0">
                     <img class="logo" src="img/logo3.png" alt="logo">
                 </a>
@@ -70,19 +72,12 @@
                     </div>
                     <div class="d-flex navBtns">
                         <div class="inline dropBox">
-                            <div class="dropdown">
-                                <a class="btn py-2 px-4 ms-4 lang dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-language fa-2x"></i>
-                                </a>
-        
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index_ar.html"><img src="img/ksa.png" alt="Arabic">العربية</a></li>
-                                    <li><a class="dropdown-item" href="#"><img src="img/uk.png" alt="English">English</a></li>
-                                </ul>
-                            </div>
-                            <!-- <a href="#" class="btn searchBtn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-search"></i></a> -->
+                            <a href="index_ar.html"><i class="fal fa-globe"></i></a>
+                            <a href="#" id="theme-button" class="theme-button">
+                                <i class="fal fa-moon"></i> <!-- القمر الافتراضي -->
+                            </a>
                         </div>
-                    <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center justify-content-center w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+                        <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center justify-content-center w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
                     </div>
                 </div>
             </nav>
@@ -194,63 +189,151 @@
     <!-- End Modals -->
 
     <div class="container-fluid position-relative p-0"> 
-        <div class="carousel slide carousel-fade pointer-event">
-            <div>
-                <!-- <img class="w-100 h-100" src="img/carousel-1.jpg" alt="Image"> -->
+        <div id="header-carousel" class="carousel slide carousel-fade pointer-event" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100 h-100" src="img/banner3.png" alt="Image">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h5 class="text-white text-uppercase mb-3 animated slideInDown">Create Your Free Website Now !</h5>
-                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">We Build Apps That Users Love</h1>
-                        <a href="./contact.html" class="btn btn-primary mainBtn py-md-3 px-md-5 animated slideInLeft">Contact Us</a>
+                        <h1 class="text-white text-uppercase mb-3 animated slideInDown"><span class="gold">Golden Code </span>for Software Solutions</h2>
+                        <h5 class="display-6 text-white mb-md-4 animated zoomIn">Comprehensive software solutions that help you achieve digital Success</h5>
+                        <a href="./register/register.html" class="btn btn-primary mainBtn py-md-3 px-md-5 animated slideInLeft">Start Now</a>
+                        <!-- <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100 h-100" src="img/banner3.png" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h2 class="h1 fw-bold text-white text-uppercase mb-3 animated slideInDown gold">Web Development</h5>
+                        <h5 class="display-6 text-white mb-md-4 animated zoomIn">We build professional websites that make it easier to connect with your clients</h5>
+                        <a href="./register/register.html" class="btn btn-primary mainBtn py-sm-2 py-md-3 px-sm-4 px-md-5 animated slideInLeft">Start Now</a>
+                        <!-- <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100 h-100" src="img/banner3.png" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h2 class="h1 fw-bold text-white text-uppercase mb-3 animated slideInDown gold">Data Analytics</h2>
+                        <h5 class="display-6 text-white mb-md-4 animated zoomIn">We turn your data into insights that help you make better decisions</h5>
+                        <a href="./register/register.html" class="btn btn-primary mainBtn py-sm-2 py-md-3 px-sm-4 px-md-5 animated slideInLeft">Start Now</a>
+                        <!-- <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100 h-100" src="img/banner3.png" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h2 class="h1 fw-bold text-white text-uppercase mb-3 animated slideInDown gold">Cyber Security</h2>
+                        <h5 class="display-6 text-white mb-md-4 animated zoomIn">We protect your data from cyber threats to ensure the safety of your business</h5>
+                        <a href="./register/register.html" class="btn btn-primary mainBtn py-sm-2 py-md-3 px-sm-4 px-md-5 animated slideInLeft">Start Now</a>
                         <!-- <a href="contact.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
                     </div>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
     </div>
     <!-- Navbar & Carousel End -->
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Happy Clients</h5>
-                            <h2 class="h1 fw-bold text-white mb-0" data-toggle="counter-up">12345</h2>
-                        </div>
+    <!-- About Start -->
+    <section class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 progress">
+                    <div class="section-title toRight position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+                        <h2 class="h1 fw-bold mb-0">Our Process Workflow</h2>
                     </div>
+                    <ul class="progress-steps">
+                        <li class="step">
+                            <span>1</span>
+                            <p>Title One<br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias nulla magni quia,  maiores iste. Voluptatibus?</span></p>
+                        </li>
+                        <li class="step">
+                            <span>2</span>
+                            <p>Title Two<br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias nulla magni quia,  maiores iste. Voluptatibus?</span></p>
+                        </li>
+                        <li class="step">
+                            <span>3</span>
+                            <p>ِTitle Three<br><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias nulla magni quia,  maiores iste. Voluptatibus?</span></p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h2 class="h1 fw-bold mb-0" data-toggle="counter-up">12345</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Win Awards</h5>
-                            <h2 class="h1 fw-bold text-white mb-0" data-toggle="counter-up">12345</h2>
-                        </div>
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative aboutImgs d-flex h-100">
+                        <img class="rounded wow zoomIn" data-wow-delay="0.2s" src="img/about.jpg">
+                        <img class="rounded wow zoomIn" data-wow-delay="0.4s" src="img/about.jpg">
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
+                <h2 class="h1 fw-bold mb-0">Custom Development Solutions for Your Successful Business</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Cyber Security</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="service.html">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-pie text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Data Analytics</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="service.html">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-code text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Web Development</h4>
+                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+                        <a class="btn btn-lg btn-primary rounded" href="service.html">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="wow zoomIn mx-auto text-center" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
+                    <a href="services.html" class="btn btn-primary py-2 px-4">See All Services</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Facts Start -->
+    <!-- Service End -->
 
 
     <!-- Features Start -->
@@ -307,273 +390,82 @@
     </div>
     <!-- Features Start -->
 
-
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-                <h2 class="h1 fw-bold mb-0">Custom Development Solutions for Your Successful Business</h2>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-shield-alt text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Cyber Security</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="service.html">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-chart-pie text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Data Analytics</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="service.html">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-code text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Web Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="service.html">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="wow zoomIn mx-auto text-center" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
-                    <a href="services.html" class="btn btn-primary py-2 px-4">See All Services</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Quote Start -->
-    <div id="quote" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title toRight position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                        <h2 class="h1 fw-bold mb-0">Need A Free Quote? Please Feel Free to Contact Us</h2>
-                    </div>
-                    <div class="row gx-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
-                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
-                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
-                        </div>
-                    </div>
-                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-5">
+        <div class="container py-5 pt-5 pb-5">
+            <div class="row gx-0">
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">
+                    <div class="bg-dark shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users "></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+011 247 62799</h4>
+                            <h5 class="text-white mb-0">Happy Clients</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="border rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected="">Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary-inverse w-100 py-3" type="submit">Request A Quote</button>
-                                </div>
-                            </div>
-                        </form>
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-dark d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class=" mb-0">Projects Done</h5>
+                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                    <div class="bg-dark shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award "></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Win Awards</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: zoomIn;">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-dark d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class=" mb-0">Projects Done</h5>
+                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Quote End -->
+    <!-- Facts Start -->
 
-    <!-- PROJECT GALLERY PART START -->
-
-    <section id="portfolio" class="project-masonry-area pt-115">
-        <div class="container">
-            <div class="row justify-content-center">
-               <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Projects</h5>
-                <h2 class="h1 fw-bold mb-0">Custom Themes We Made Before</h2>
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Our Partners</h5>
+                <h2 class="h1 fw-bold mb-0">Partners of Success</h2>
+        </div>
+        <div class="container py-5 mb-5">
+            <div class="bg-light">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
                 </div>
             </div>
-            <!-- <div class="row align-items-end">
-                <div class="col-lg-4">
-                    <div class="pb-20  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <h6 class="sub-title">Portfolio</h6>
-                        <h4 class="title">Themes <span>Gallery.</span></h4>
-                    </div> 
-                </div>
-                <div class="col-lg-8">
-                    <div class="project-menu text-center text-sm-left text-lg-right pb-20">
-                        <ul>
-                            <li class="active" data-filter="*">See All</li>
-                            <li data-filter=".apps">Apps</li>
-                            <li data-filter=".branding">Branding</li>
-                            <li data-filter=".creative">Creative</li>
-                            <li data-filter=".laptop">Foundations</li>
-                            <li data-filter=".product">Product</li>
-                        </ul>
-                    </div> 
-                </div>
-            </div> -->
-            <div class="row grid">
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/ezhalha.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://ezhalha.com.sa/" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/Home.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Ezhalha</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/minible.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="http://www.minbible.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/minbible-com.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Minbible</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/gold.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://globaly.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/أفضل-منصة-ذهب-ومجوهرات-اون-لاين-في-السعودية-جولد-بوليفارد.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Jewellery</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/vien.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://veinlab.net" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/مختبرات-فين.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Vien Labs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/mayasem.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://mayasem.online" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/مياسم-العقار.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Mayasem</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/مؤسسة-المناسب.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://payship.biz/" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/monasib.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Almonasib</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/3lmni.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://3mniacademy.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/3lmni-school-Home.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">3Lmni</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/FUSION.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://fusionai-co.com/" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/fusionfull.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Fusion AI</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 grid-item">
-                            <div class="team-item single-gallery bg-light rounded overflow-hidden">
-                                <div class="team-img gallery-img position-relative overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/portfolio/goldsgym.png" alt="">
-                                    <div class="team-social two">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://karimosama99.github.io/GoldsGym/" target="_blank"><i class="bi bi-eye-fill"></i></a>
-                                        <a class="btn btn-lg image-popup btn-primary btn-lg-square rounded" href="img/portfolio/Gold-s-Gym-Egypt.png" data-fancybox="gallery"><i class="bi bi-images"></i></a>
-                                        <a class="btn text-white" href="#">Gold's Gym</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="gallery-btn mt-4 mb-5 text-center">
-                        <a class="btn btn-primary py-3 px-4 d-inline-flex gap-3" href="./portfolio.html">Load More<i class="bi bi-shop"></i></a>
-                    </div>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!-- PROJECT GALLERY PART ENDS -->
-
+        </div>
+    </div>
+    <!-- Vendor End -->
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -636,6 +528,22 @@
     </div>
     <!-- Testimonial End -->
 
+    <!-- CTA Start -->
+     <div class="container py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="row py-5 mb-5">
+            <div class="col-sm-12">
+                <div class="cta">
+                    <h3>Let's achieve the success you deserve together
+                    If you're looking for comprehensive solutions in software development, web design, and data analytics, we're here to help.</h3>
+                    <a href="contact.html" class="btn btn-dark inverter">Contact Us Now !</a>
+                    <!-- <div class="btns">
+                        <a href="contact.html" class="btn btn-light inverter">Register Now</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA End -->
 
     <!-- Blog Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
@@ -652,7 +560,7 @@
                                     <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
                                 </div>
                                 <div class="p-4">
-                                    <a href="details.html" class="text-dark"><h4 class="mb-3">How to build a website</h4></a>
+                                    <a href="details.html"><h4 class="mb-3">How to build a website</h4></a>
                                     <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
                                     <div class="d-flex mt-3 justify-content-between">
                                         <a class="text-uppercase" href="details.html">Read More <i class="bi bi-arrow-right"></i></a>
@@ -668,7 +576,7 @@
                                     <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
                                 </div>
                                 <div class="p-4">
-                                    <a href="details.html" class="text-dark"><h4 class="mb-3">How to build a website</h4></a>
+                                    <a href="details.html"><h4 class="mb-3">How to build a website</h4></a>
                                     <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
                                     <div class="d-flex mt-3 justify-content-between">
                                         <a class="text-uppercase" href="details.html">Read More <i class="bi bi-arrow-right"></i></a>
@@ -684,7 +592,7 @@
                                     <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">Web Design</a>
                                 </div>
                                 <div class="p-4">
-                                    <a href="details.html" class="text-dark"><h4 class="mb-3">How to build a website</h4></a>
+                                    <a href="details.html"><h4 class="mb-3">How to build a website</h4></a>
                                     <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
                                     <div class="d-flex mt-3 justify-content-between">
                                         <a class="text-uppercase" href="details.html">Read More <i class="bi bi-arrow-right"></i></a>
@@ -698,41 +606,82 @@
     </div>
     <!-- Blog Start -->
 
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.jpg" alt="">
-                    <img src="img/vendor-2.jpg" alt="">
-                    <img src="img/vendor-3.jpg" alt="">
-                    <img src="img/vendor-4.jpg" alt="">
-                    <img src="img/vendor-5.jpg" alt="">
-                    <img src="img/vendor-6.jpg" alt="">
-                    <img src="img/vendor-7.jpg" alt="">
-                    <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
+    <!-- Faq Start -->
+         <div id="quote" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">FAQ</h5>
+                <h2 class="h1 fw-bold mb-0">Frequently Asked Questions</h2>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <img src="img/faq.svg" alt="faq" width="100%">
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                            <i class="bi bi-chevron-down ms-auto"></i>
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                            <i class="bi bi-chevron-down ms-auto"></i>
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                            <i class="bi bi-chevron-down ms-auto"></i>
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Vendor End -->
+    <!-- Faq End -->
     
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-light text-dark mt-5 wow fadeInUp footer" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffd080" fill-opacity="1" d="M0,64L48,90.7C96,117,192,171,288,176C384,181,480,139,576,144C672,149,768,203,864,208C960,213,1056,171,1152,160C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <div class="container-fluid bg-light footer">
         <div class="container">
-            <div class="row gx-5">
+            <div class="row gx-5 frow">
                 <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-4">
+                    <div class="d-flex flex-column align-items-center justify-content-start text-center h-100 p-4">
                         <a href="index.html">
                             <img class="flogo" src="img/logo5.png" alt="logo">
                         </a>
                         <p class="mt-3 mb-4">Golden Coode The best team specialized in designing and programming websites, blogs and online stores</p>
                         <form action="">
                             <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Say Hello !">
+                                <input type="text" class="form-control border-white p-3 sendInput" placeholder="Say Hello !">
                                 <button class="btn btn-primary-inverse">Send</button>
                             </div>
                         </form>
@@ -740,9 +689,33 @@
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class=" mb-0">Company</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class=" mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class=" mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class=" mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class=" mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class=" mb-0">Services</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Creative Design</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Development</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Digital Marketing</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hosting</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Others</a>
+                            </div>
+                        </div>
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-dark mb-0">Get In Touch</h3>
+                                <h3 class=" mb-0">Get In Touch</h3>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
@@ -763,36 +736,12 @@
                                 <a class="btn btn-primary btn-square" href="#"><i class="fab fa-youtube fw-normal"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-dark mb-0">Company</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-dark mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-dark mb-0">Services</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Creative Design</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Development</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Digital Marketing</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hosting</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Others</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-dark bg-light">
+    <div class="container-fluid  bg-light">
         <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-6">
@@ -800,7 +749,7 @@
                         <p class="mb-0">© <a class="text-primary border-bottom" href="https://goldencoode.com">Golden Coode</a>. All Rights Reserved. 
 						
 						
-						Designed by <a class="text-dark border-bottom author" href="https://karim-osama.netlify.app" target="_blank">Karim Osama</a></p>
+						Designed by <a class=" border-bottom author" href="https://karim-osama.netlify.app" target="_blank">Karim Osama</a></p>
                     </div>
                 </div>
             </div>
@@ -819,6 +768,7 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/fontawesome/all.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -827,8 +777,9 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/isotope/imagesloaded.pkgd.min.js"></script>
     <script src="lib/fancybox/fancybox.umd.js"></script>
-
+    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/themes.js"></script>
 </body>
 </html>

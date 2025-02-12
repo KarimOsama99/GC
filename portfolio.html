@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&amp;display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/fontawesome/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -55,7 +55,8 @@
     <!-- Navbar Start -->
      <div class="container-fluid sticky-top">
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0"> 
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0 position-relative"> 
+                <!-- <img class="shape" src="img/shape1.avif" alt="shape"> -->
                 <a href="index.html" class="navbar-brand p-0">
                     <img class="logo" src="img/logo3.png" alt="logo">
                 </a>
@@ -73,22 +74,15 @@
                     </div>
                     <div class="d-flex navBtns">
                         <div class="inline dropBox">
-                            <div class="dropdown">
-                                <a class="btn py-2 px-4 ms-4 lang dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fas fa-language fa-2x"></i>
-                                </a>
-        
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index_ar.html"><img src="img/ksa.png" alt="Arabic">العربية</a></li>
-                                    <li><a class="dropdown-item" href="#"><img src="img/uk.png" alt="English">English</a></li>
-                                </ul>
-                            </div>
-                            <!-- <a href="#" class="btn searchBtn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-search"></i></a> -->
+                            <a href="index_ar.html"><i class="fal fa-globe"></i></a>
+                            <a href="#" id="theme-button" class="theme-button">
+                                <i class="fal fa-moon"></i> <!-- القمر الافتراضي -->
+                            </a>
                         </div>
-                    <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center justify-content-center w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+                        <a href="index_ar.html" class="btn btn-primary py-2 px-4 ms-4 lang d-flex align-items-center justify-content-center w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started</a>
                     </div>
                 </div>
-        </nav>
+            </nav>
         </div>
      </div>
     <div class="container-fluid position-relative p-0">
@@ -382,7 +376,7 @@
     <!-- Vendor Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5 mb-5">
-            <div class="bg-white">
+            <div class="bg-light">
                 <div class="owl-carousel vendor-carousel">
                     <img src="img/vendor-1.jpg" alt="">
                     <img src="img/vendor-2.jpg" alt="">
@@ -401,18 +395,21 @@
     
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-light text-dark mt-5 wow fadeInUp footer" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffd080" fill-opacity="1" d="M0,64L48,90.7C96,117,192,171,288,176C384,181,480,139,576,144C672,149,768,203,864,208C960,213,1056,171,1152,160C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <div class="container-fluid bg-light footer">
         <div class="container">
-            <div class="row gx-5">
+            <div class="row gx-5 frow">
                 <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 p-4">
+                    <div class="d-flex flex-column align-items-center justify-content-start text-center h-100 p-4">
                         <a href="index.html">
                             <img class="flogo" src="img/logo5.png" alt="logo">
                         </a>
                         <p class="mt-3 mb-4">Golden Coode The best team specialized in designing and programming websites, blogs and online stores</p>
                         <form action="">
                             <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Say Hello !">
+                                <input type="text" class="form-control border-white p-3 sendInput" placeholder="Say Hello !">
                                 <button class="btn btn-primary-inverse">Send</button>
                             </div>
                         </form>
@@ -420,9 +417,33 @@
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class=" mb-0">Company</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class=" mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class=" mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class=" mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class=" mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
+                                <h3 class=" mb-0">Services</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Creative Design</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Development</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Digital Marketing</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hosting</a>
+                                <a class=" mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Others</a>
+                            </div>
+                        </div>
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-dark mb-0">Get In Touch</h3>
+                                <h3 class=" mb-0">Get In Touch</h3>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
@@ -443,36 +464,12 @@
                                 <a class="btn btn-primary btn-square" href="#"><i class="fab fa-youtube fw-normal"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-dark mb-0">Company</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-dark mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title toRight section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-dark mb-0">Services</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Creative Design</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Development</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Digital Marketing</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hosting</a>
-                                <a class="text-dark mb-2" href="services.html"><i class="bi bi-arrow-right text-primary me-2"></i>Others</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-dark bg-light">
+    <div class="container-fluid  bg-light">
         <div class="container text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-6">
@@ -480,7 +477,7 @@
                         <p class="mb-0">© <a class="text-primary border-bottom" href="https://goldencoode.com">Golden Coode</a>. All Rights Reserved. 
 						
 						
-						Designed by <a class="text-dark border-bottom author" href="https://karim-osama.netlify.app" target="_blank">Karim Osama</a></p>
+						Designed by <a class=" border-bottom author" href="https://karim-osama.netlify.app" target="_blank">Karim Osama</a></p>
                     </div>
                 </div>
             </div>
@@ -499,6 +496,7 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/fontawesome/all.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -510,6 +508,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/themes.js"></script>
 </body>
 
 </html>

@@ -118,8 +118,32 @@ html {
 .timeline-content {
   text-align: right;
 }
+
+#wave {
+  transform: translateY(5px) scaleX(-1);
+}
+
+@media (min-width: 1299px) {
+  .navbar-dark .navbar-nav {
+    transform: translateX(-35px);
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .navBtns .inline {
+    right: unset;
+    left: 125px;
+  }
+}
 /* Time Line responsive */
 @media(max-width: 767px){
+  .navBtns .inline {
+    right: unset;
+    left: 80px;
+  }
+  .carousel-control-next {
+    right: 50%;
+    transform: translateX(100%);
+  }
 	.timeline-items::before{
 		left: unset;
 	}

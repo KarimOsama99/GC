@@ -89,6 +89,10 @@ body {
   background-color: var(--body-color);
 }
 
+.dark-theme #preloader {
+  background: var(--body-color) !important;
+}
+
 #preloader {
   /* Body Overlay */
   position: fixed;
@@ -98,7 +102,7 @@ body {
   height: 100%;
   width: 100%;
   /* Change Background Color */
-  background: #fff;
+  background: var(--light);
   z-index: 99999;
 }
 
@@ -107,7 +111,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden !important;
 }
 
@@ -584,6 +588,10 @@ h6,
     top: 0;
     height: 100%; */
   width: 180px;
+}
+.dark-theme .logo,
+.dark-theme .flogo {
+  filter: invert(1);
 }
 
 .flogo {
@@ -1101,6 +1109,9 @@ h6,
     max-width: 100%;
     margin-bottom: 1em;
   }
+  .cta.second {
+    align-items: center;
+  }
 }
 
 .vendor-carousel img {
@@ -1387,6 +1398,9 @@ h6,
   position: absolute;
   bottom: 0;
 }
+.dark-theme .team-social.two a:last-child {
+  background-color: var(--light);
+}
 
 @media (max-width: 391px) {
   .team-social.two a:last-child {
@@ -1609,6 +1623,9 @@ a {
 }
 .dark-theme #wave path {
   fill: var(--light) !important;
+}
+.dark-theme .footer + .bg-light {
+  background-color: var(--body-color) !important;
 }
 .footer a {
   color: var(--dark);

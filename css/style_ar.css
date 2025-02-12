@@ -67,9 +67,9 @@ html {
   margin-right: unset !important;
   margin-left: 1.5rem !important;
   }
-  .px-4.lang {
+  /* .px-4.lang {
     padding-right: unset !important;
-  }
+  } */
 }
 
 .testimonial-item .d-flex {

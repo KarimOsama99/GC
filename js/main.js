@@ -9,9 +9,14 @@
     // تحميل الثيم المحفوظ
     if (localStorage.getItem("theme") === "dark") {
       $("body").addClass(darkTheme);
-      $("#theme-button svg").removeClass(iconMoon).addClass(iconSun);
+      $("#theme-button i").removeClass(iconMoon).addClass(iconSun);
     }
 
+    if($("body").hasClass(darkTheme)) {
+      $("#theme-button i").addClass(iconSun);
+    } else {
+      $("#theme-button i").addClass(iconMoon);
+    }
     // عند الضغط على الزر
     $("#theme-button").click(function (e) {
       e.preventDefault();

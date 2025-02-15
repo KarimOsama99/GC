@@ -145,6 +145,19 @@
     },
   });
 
+  // Testimonials New
+  $(".testimonial-custom").owlCarousel({
+    autoplay: true,
+    loop: true,
+    dots: true,
+    // animateOut: "slideOutDown",
+    // animateIn: "flipInX",
+    items: 1,
+    margin: 30,
+    stagePadding: 30,
+    smartSpeed: 450,
+  });
+
   // Vendor carousel
   $(".vendor-carousel").owlCarousel({
     loop: true,

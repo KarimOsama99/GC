@@ -1409,7 +1409,7 @@ h6,
   -webkit-line-clamp: 2;
 }
 
-.service a {
+.discover {
   color: var(--dark);
   font-size: 18px;
   padding: 10px 0;
@@ -1418,15 +1418,22 @@ h6,
   gap: 8px;
   transition: all .3s ease-in-out;
 }
-.service a svg {
+.discover svg {
   margin-top: 2px;
 }
-.service a:hover {
+.discover:hover {
   color: var(--primary);
 }
-.service a:hover svg {
+.discover:hover svg {
   transform: translateX(8px);
   transition: transform .25s ease-in-out;
+}
+.blog-item .discover {
+  padding: 0;
+  font-size: 16px;
+}
+.blog-item .discover svg {
+  margin-top: 0;
 }
 
 /* .service-item {

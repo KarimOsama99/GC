@@ -809,17 +809,28 @@ h6,
   justify-content: center;
 }
 @media (max-width: 991px) {
-  .home .home-img {
+  /* .home {
+    align-items: flex-start;
+  } */
+  /* .home .home-img {
     margin-top: 3.5em;
-  }
+  } */
   .home .hero a {
     padding: .5em 2.2em;
     font-size: 18px;
+  }
+  .home .row {
+    /* flex-direction: column-reverse; */
+    gap: 2em;
   }
 }
 @media (max-width: 767px) {
   .home {
     height: calc(100vh - 67px);
+    padding: 2em 1em !important;
+  }
+  .home .home-img {
+    display: none !important;
   }
   .home .hero a {
     padding: .35em 2em;

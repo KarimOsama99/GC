@@ -165,3 +165,40 @@ html {
   padding-left: unset !important;
   padding-right: 25px !important;
 }
+
+.service::before {
+  right: unset !important;
+  left: -3px;
+  border-bottom-left-radius: unset !important;
+  border-bottom-right-radius: 8px !important;
+}
+.service:hover::before {
+  border-top: 40px solid #fff;
+  border-left: 40px solid #fff;
+  border-bottom: 40px solid var(--primary);
+  border-right: 40px solid var(--primary);
+}
+.dark-theme .service:hover::before {
+  border-top: 40px solid var(--body-color);
+  border-left: 40px solid var(--body-color);
+  border-bottom: 40px solid var(--primary);
+  border-right: 40px solid var(--primary);
+}
+.service a svg {
+  transform: rotate(180deg);
+}
+.service a:hover svg {
+  transform: translateX(-8px) rotate(180deg);
+  transition: transform .25s ease-in-out;
+}
+
+.testimonial-custom .profile {
+  justify-content: flex-start;
+}
+.testimonial-custom .data {
+  text-align: right;
+}
+.testimonial-custom .quotes {
+  right: unset;
+  left: 0;
+}

@@ -184,10 +184,10 @@ html {
   border-bottom: 40px solid var(--primary);
   border-right: 40px solid var(--primary);
 }
-.service a svg {
+.discover svg {
   transform: rotate(180deg);
 }
-.service a:hover svg {
+.discover:hover svg {
   transform: translateX(-8px) rotate(180deg);
   transition: transform .25s ease-in-out;
 }
